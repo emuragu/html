@@ -1,0 +1,105 @@
+﻿body
+{
+	background-image:url('background.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	background-blend-mode:darken;
+    height: 100vh;
+	width: 100vh;
+	overflow-x:hidden;
+	overflow-y:hidden;
+    animation:fade-in 1s;
+}
+@keyframes fade-in{
+	0%{
+		opacity:0;
+		transform:translatey(15px);
+	}
+	100%{
+		opacity:2;
+		transform:translatey(15px);
+	}
+}
+.links{
+	display:flex;
+	text-decoration:none;
+	justify-content:space-between;
+	background-color:none;
+	animation:fade-in 1s;
+
+}
+.link{
+	list-style:none;
+	padding:none;
+	transform:translateX(550px);
+	margin-top:30px;
+	transition:0.1s;
+}
+.link:hover{
+	transition:0.4s;
+	border:none;
+	background-color:none;
+}
+.div{
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:20px;
+	background-color:none;
+}
+.container{
+	background-color:#0678;
+	width:500px;
+	height:250px;
+	margin-left:50%;
+	margin-right:50%;
+	margin-top:10px;
+	padding:40px;
+}
+.form{
+    float:left;
+	padding:0px;
+}
+.imgs{
+	display:flex;
+	height:380px;
+}
+.img{
+	float:right;
+}
+.btn{
+	padding:0;
+	margin-top:5px;
+}
+.btn:hover{
+	background:lightpink;
+	opacity:2;
+}
+.h1{
+	color:black;
+	font-weight:700px;
+    font-family:anonymous pro, dank mono;
+	text-align:center;
+	margin-left:400px;
+}
+.p{
+	margin:0;
+	padding:0;
+	font-weight:200;
+}
+.space{
+	display:flex;
+	flex-direction:column;
+}
+.footer{
+  position: fixed;
+  margin-top:30px;
+  padding-top:40px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display:flex;
+  justify-content:space-evenly;
+  text-align: center;
+}
